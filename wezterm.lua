@@ -1,8 +1,11 @@
 local wezterm = require 'wezterm';
 
+
 return {
+  color_scheme = 'Dark Ocean (terminal.sexy)',
   font = wezterm.font("0xProto Nerd Font"),
   font_size = 16.0,
+  disable_default_key_bindings = true,
   keys = {
     {
       key = 't',
@@ -38,6 +41,11 @@ return {
       key = "p",
       mods = "CMD",
       action = wezterm.action { PaneSelect = { alphabet = "123456789" } }
+    },
+    {
+      key = "\\",
+      mods = "CMD",
+      action = wezterm.action.SplitVertical { domain = 'CurrentPaneDomain' },
     }
   }
 }
