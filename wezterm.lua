@@ -3,7 +3,9 @@ local wezterm = require 'wezterm';
 return {
   color_scheme = 'Dark Ocean (terminal.sexy)',
   font = wezterm.font("0xProto Nerd Font"),
-  font_size = 16.0,
+  font_size = 14.0,
+  line_height = 1.3,
+  harfbuzz_features = { "calt", "liga", "dlig", "ss01", "ss02", "ss03", "ss04", "ss05", "ss06", "ss07", "ss08" },
   disable_default_key_bindings = true,
   keys = {
     {
