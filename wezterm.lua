@@ -72,6 +72,11 @@ return {
       key = "p",
       mods = "CMD",
       action = wezterm.action { PaneSelect = { alphabet = "123456789" } }
+    },
+    {
+      key = "s",
+      mods = "CMD",
+      action = wezterm.action.ActivateCopyMode
     }
   }
 }
